@@ -45,11 +45,11 @@ This project will be implemented in C++ with CUDA and OpenMPI for the low-level 
 ***
 #### Schedule
 
-* Week 1: Set up initial benchmarking with SpecInfer or a similar static approach for baseline performance.
-* Week 2: Begin implementing dynamic tree construction on multi-GPU architecture, with focus on GPU memory management.
-* Week 3: Develop load-balancing mechanism for target and draft model inference, implementing inter-GPU synchronization.
-* Week 4: Test and refine inter-GPU communication efficiency and optimize dynamic scheduling for concurrent request handling.
-* Week 5: Conduct scalability testing on multi-GPU clusters; identify and address any bottlenecks.
+* Week 1: Design and set up initial benchmarking with SpecInfer (a static approach) for baseline performance.
+* Week 2: Implement a sequential version of our dynamic tree-based speculative decoding algorithm
+* Week 3: Derive a simple parallel approach using tensor parallelism provided by PyTorch
+* Week 4: Implement a parallel version of the algorithm using CUDA
+* Week 5: Benchmark and compare performance between different versions of the algorithm
 * Week 6: Complete final performance evaluation, prepare final report, and create any visualizations for demonstration.
 
 ***
