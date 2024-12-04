@@ -45,10 +45,10 @@ This project will be implemented in C++ with CUDA and OpenMPI for the low-level 
 ***
 #### Schedule
 
-* Week 1: Design and set up initial benchmarking with SpecInfer (a static approach) for baseline performance.
+* Week 1: Literature Review; Design and set up initial benchmarking with SpecInfer (a static tree-based decoding) for baseline performance.
 * Week 2: Implement a sequential version of our dynamic tree-based speculative decoding algorithm
 * Week 3: Derive a simple parallel approach using tensor parallelism provided by PyTorch
-* Week 4: Implement a parallel version of the algorithm using CUDA
+* Week 4: Provide a parallel implementation of the algorithm using CUDA
 * Week 5: Benchmark and compare performance between different versions of the algorithm
 * Week 6: Complete final performance evaluation, prepare final report, and create any visualizations for demonstration.
 

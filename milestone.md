@@ -2,19 +2,23 @@
 layout: page
 title: "Milestone"
 ---
-  
 
-#### Project Progress
-
-At this point, we have finished setting up the initial benchmarking experiment with SpecInfer, a static tree-based speculative-decoding algorithm that serves as a baseline. We also implemented a sequential version of the proposed dynamic tree-based speculative-decoding algorithm. Additionally, we were able to implement a simple parallel version of the algorithm that leverages the tenor-parallelism capabilities provided by Pytorch. Initial benchmarking shows that the parallel version exhibits speedup against the sequential one.
-
-Compared with the schedule in the project proposal, we believe that we are currently on track of our original schedule. We are currently implementing and debugging a CUDA parallel version of the algorithm, which we expect to finish by the end of this week. We aim to conduct more comprehensive benchmark testings to measure the speed-up of the parallel implementation, and make incremental improvements based on analysis.
-
-  
+#### Original Schedule 
+* Week 1: Literature Review; Design and set up initial benchmarking with SpecInfer (a static tree-based decoding) for baseline performance.
+* Week 2: Implement a sequential version of our dynamic tree-based speculative decoding algorithm
+* Week 3: Derive a simple parallel approach using tensor parallelism provided by PyTorch
+* Week 4: Provide a parallel implementation of the algorithm using CUDA
+* Week 5: Benchmark and compare performance between different versions of the algorithm
+* Week 6: Complete final performance evaluation, prepare final report, and create any visualizations for demonstration.
 
 ***
+#### Project Progress
+At this point, we have conducted the necessary literature review and finished setting up the initial benchmarking experiment with SpecInfer, a static tree-based speculative-decoding algorithm that serves as a baseline. We also implemented a sequential version of the proposed dynamic tree-based speculative-decoding algorithm. Additionally, we were able to implement a simple parallel version of the algorithm that leverages the tenor-parallelism capabilities provided by Pytorch. Initial benchmarking shows that the parallel version exhibits speedup against the sequential one. 
 
-#### Updated schedule
+Compared with the schedule in the project proposal, we believe we are currently on track to finish the project on time. We are currently implementing and debugging a CUDA parallel version of the algorithm, which we expect to finish by the end of this week. We aim to conduct more comprehensive benchmark testings to measure the speed-up of the parallel implementation, and make incremental improvements based on analysis.
+
+***
+#### Updated upcoming schedule
 
 | Schedule | Task | Person In Charge |
 |----------|------|-----------------|
@@ -26,8 +30,11 @@ Compared with the schedule in the project proposal, we believe that we are curre
 ***
 #### Poster Deliverables
 
-As for the poster session, we plan to showcase our implementation as well as findings on the performance benchmarks using graphs and plots.
-
+In the poster session, we plan to present the following
+* A figure illustrating how dynamic tree-based speculative decoding works
+* A diagram modeling our framework, highlighting the parallel component
+* Several plots showing the speed up benchmark of our parallel implementation compared to the chosen baselines
+* Discussion about the current solution and future directions
   
 
 ***
