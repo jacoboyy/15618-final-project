@@ -31,10 +31,10 @@ This project will leverage existing speculative decoding frameworks like SpecInf
 #### Goals and Deliverables
 1. Primary Goals:
     * Implement a parallel, dynamic tree-based speculative decoding algorithm for multi-GPU inference.
-    * Achieve efficient load balancing between target and draft models across GPUs.
+    * Provide a graphical or statistical representation of the speedup, illustrating efficiency gains under various workloads.
     * Benchmark and compare the speedup of dynamic speculative decoding against a static tree-based approach.
 2. Stretch Goals:
-    * Provide a graphical or statistical representation of the speedup, illustrating efficiency gains under various workloads.
+    * Achieve efficient load balancing between target and draft models across GPUs.
     * Explore advanced scheduling techniques that adapt in real time to changing request patterns and model states.
 
 
